@@ -1,26 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Marten;
-using RunMeSecond.MyDocs;
+using MyDocs;
+
+namespace MyDocs
+{
+    public class A
+    {
+        public int Id { get; set; }
+        public int ForeignKeyB { get; set; }
+    }
+
+    public class B
+    {
+        public int Id { get; set; }
+    }
+}
 
 namespace RunMeSecond
 {
-    namespace MyDocs
-    {
-        public class A
-        {
-            public int Id { get; set; }
-            public int ForeignKeyB { get; set; }
-        }
 
-        public class B
-        {
-            public int Id { get; set; }
-        }
-    }
     class Program
     {
         static void Main(string[] args)
